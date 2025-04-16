@@ -11,7 +11,20 @@
     "plugin:import/recommended",
     "plugin:import/electron",
     "plugin:import/typescript",
-    "plugin:vue/vue3-recommended"
+    "plugin:vue/recommended"
   ],
-  "parser": "@typescript-eslint/parser"
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": 10,
+        "multiline": 10
+      }
+    ]
+  }
 }
